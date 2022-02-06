@@ -52,6 +52,7 @@ var darkmode_on= function(){
         document.querySelectorAll("a")[5].style="background-color:#1e1e1e"
         document.querySelector("#becipe-recipe-search").style="background-color:black;color:blue"
         document.querySelector(".fn__title").style="color:white"
+        document.querySelector(".becipe_fn_container_in").style="background-color:rgb(0 0 0 / 96%)"
         document.querySelector(".slider").style="background-color:#391f80"
         document.body.style="background-color:#020012"
         var item =document.querySelector(".becipe_fn_pagetitle");
@@ -59,13 +60,9 @@ var darkmode_on= function(){
         item.classList.add("becipe_fn_pagetitle_darkmode")
         }
         var item1=document.querySelectorAll(".becipe_fn_container_in")[2]
-        var item2=document.querySelectorAll(".becipe_fn_container_in")[0]
         if(item1 !== null){
-          item1.style.backgroundColor="black"
+          item1.style="background-color=black"
           };
-          if(item2 !== null){
-            item1.style.backgroundColor="rgb(0 0 0 / 96%"
-            };
 
 }
 var darkmode_off= function(){
@@ -85,21 +82,14 @@ var darkmode_off= function(){
     document.querySelectorAll("a")[5].style="background-color:#f0ca6e"
     document.querySelector("#becipe-recipe-search").style="background-color:#fff"
     document.querySelector(".fn__title").style="color:#00000"
+    document.querySelector(".becipe_fn_container_in").style="background-color:#fff"
     document.body.style="transition: 1s;background-color:#f6f3f6"
     document.querySelector(".slider").style="background-color:rgb(0, 195, 255)"
     var item =document.querySelector(".becipe_fn_pagetitle");
     if(item !== null){
         item.classList.remove("becipe_fn_pagetitle_darkmode")
-        
     }
-    var item1=document.querySelectorAll(".becipe_fn_container_in")[2]
-    if(item1 !== null){
-      item1.style.backgroundColor="#fff"
-      };
-      var item2=document.querySelectorAll(".becipe_fn_container_in")[0]
-      if(item2 !== null){
-        item1.style.backgroundColor="#fff"
-        };
+
 
 }
 
